@@ -16,7 +16,7 @@ USE sql_inject_demo;
 
 DROP TABLE IF EXISTS t_user;
 CREATE TABLE t_user(
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(100) COMMENT '用户名',
     passwd CHAR(32) COMMENT '密码'
 ) CHARSET UTF8;
