@@ -29,5 +29,5 @@ steps:
     PolarisService: 'sipse'
     DetectVersion: 'latest'
     DetectArguments: |
-      --detect.project.name=System.TeamProject
-      --detect.project.version.name=Build.BuildId
+      --detect.project.name=$(System.TeamProject)
+      --detect.project.version.name=$(Build.BuildId)
