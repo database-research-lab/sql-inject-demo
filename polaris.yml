@@ -12,14 +12,14 @@ capture:
     buildCommands:
     - shell: [mvn, -f, pom.xml, install, -DskipTests]
   fileSystem:
-    ears:$
+    ears:
       extensions: [ear]
-      files:$
+      files:
       - directory: ${project.projectDir}
-    java:$
-      files:$
+    java:
+      files:
       - directory: ${project.projectDir}
-    javascript:$
-      files:$
+    javascript:
+      files:
       - directory: ${project.projectDir}
       - excludeRegex: node_modules|bower_components|vendor
